@@ -1,0 +1,35 @@
+%dw 2.0
+output application/json
+---
+{
+	"applicationin": {
+		"cibilsuccessful": payload.applicationin.cibilsuccessful,
+		"alias": payload.applicationin.alias,
+		"loanappliedstudent" : payload.applicationin.loanappliedstudent
+	},
+	"applicant": {
+		"applicantin": {
+			"applicantdetails": {
+				"incometaxpan": payload.applicant.applicantin.applicantdetails.incometaxpan,
+				"pan": payload.applicant.applicantin.applicantdetails.pan,
+				"scoreflag": payload.applicant.applicantin.applicantdetails.scoreflag,
+				"enquiryreason": payload.applicant.applicantin.applicantdetails.enquiryreason,
+				"lname": payload.applicant.applicantin.applicantdetails.lname,
+				"fname": payload.applicant.applicantin.applicantdetails.fname,
+				"dualpancard": payload.applicant.applicantin.applicantdetails.dualpancard,
+				"flatnoplotnohouseno": payload.applicant.applicantin.applicantdetails.flatnoplotnohouseno,
+				"roadnonamearealocality": payload.applicant.applicantin.applicantdetails.roadnonamearealocality,
+				"city": payload.applicant.applicantin.applicantdetails.city,
+				"landmark": payload.applicant.applicantin.applicantdetails.landmark,
+				"state": payload.applicant.applicantin.applicantdetails.state,
+				"pincode": payload.applicant.applicantin.applicantdetails.pincode,
+				"mobilephone": payload.applicant.applicantin.applicantdetails.mobilephone,
+				"gender": payload.applicant.applicantin.applicantdetails.gender,
+				"dateofbirth": payload.applicant.applicantin.applicantdetails.dateofbirth,
+				"cccid": payload.applicant.applicantin.applicantdetails.cccid
+			}
+		}
+	}
+}
+
+
